@@ -1,26 +1,27 @@
 import React from 'react'
 import {Form, Field, Submit} from 'easy-react-form'
 
-const search = () => {
+const Search = (props) => {
+  
+  const testFunc = values => {
+     console.log(values.search)
+  }
+
   return (
     <div>
-         <Form onSubmit={ this.submit }>
+         <Form onSubmit = {values => testFunc(values)}>
             <Field
-            required
-            name="phone"
-            component="input"
-            type="tel"
-            placeholder="Enter phone number"
-            // Initial value for this field.
-            value={ user.phone }
-            validate={ this.validatePhone } />
-
-            <Submit component={ SubmitButton }>
-            Save
-            </Submit>
+                required
+                name="search"
+                component="input"
+                placeholder="Enter Query"/>
+{/* 
+            <Submit component= "button">
+                Save
+            </Submit> */}
       </Form>
     </div>
   )
 }
 
-export default search
+export default Search

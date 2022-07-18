@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Search from './components/Search'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello</h1>
+      <Search/>
           {
           (typeof data.members === 'undefined') ?
             <p>Loaders . . .</p>
