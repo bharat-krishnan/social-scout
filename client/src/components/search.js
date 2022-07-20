@@ -15,10 +15,10 @@ const Search = (props) => {
                 name="search"
                 component="input"
                 placeholder="Enter Query"/>
-{/* 
+
             <Submit component= "button">
                 Save
-            </Submit> */}
+            </Submit>
       </Form>
     </div>
   )
